@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de Bandas</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <h1><%= texto %></h1>
@@ -13,9 +14,7 @@
                 <a href="/bandas/<%= listadoBandas[i].nombre.toLowerCase().replace(/[\s\.\-\/\'\"]/g, '') %>">
                     <h2><%= listadoBandas[i].nombre %></h2>
                 </a>
-                <a href="/bandas/<%= listadoBandas[i].nombre.toLowerCase().replace(/[\s\.\-\/\'\"]/g, '') %>">
-                    <img src="<%= listadoBandas[i].cover %>" alt="Imagen de <%= listadoBandas[i].nombre %>" style="width: 150px;">
-                </a>
+                <img src="<%= listadoBandas[i].cover %>" alt="Imagen de <%= listadoBandas[i].nombre %>" style="width: 150px;">
             </li>
         <% } %>
     </ul>
