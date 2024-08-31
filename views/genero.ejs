@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandas por Género</title>
+</head>
+<body>
+    <h1><%= texto %></h1>
+    <ul>
+        <% if(listadoBandas.length > 0) { %>
+            <% for(let i = 0; i < listadoBandas.length; i++) { %>
+                <li>
+                    <h2><%= listadoBandas[i].nombre %></h2>
+                </li>
+            <% } %>
+        <% } else { %>
+            <p>No se encontraron bandas en el género seleccionado.</p>
+        <% } %> 
+    </ul>
+</body>
+</html>

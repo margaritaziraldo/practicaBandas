@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= texto %></h1>
+    <ul>
+        <h1><%= banda.nombre %></h1>
+        <img src="/<%= banda.cover %>" alt="Imagen de <%= banda.nombre %>" style="width: 300px;">
+        <li>Integrantes: <%= banda.integrantes %></li>
+        <li> Género: <a href="/genero/<%= banda.genero.toLowerCase() %>"><%= banda.genero %></a></li>
+        <li>Top Canciones: <%= banda.topCanciones.join(', ') %></li>
+        <li>Video: <a href="<%= banda.video %>" target="_blank">Ver Video</a></li>
+    </ul>
+    </ul>
+</body>
+</html>
